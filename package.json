@@ -2,7 +2,7 @@
   "name": "messageslite",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://mikolajjkrol.github.io/messageslite",
+  "homepage": "https://mikolajjkrol.github.io/messageslite/",
   "type": "module",
   "scripts": {
     "dev": "vite",
