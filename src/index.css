@@ -1,0 +1,89 @@
+*{
+  font-family: "Barlow", sans-serif;
+  font-weight: 300;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  color: var(--color-fnt);
+  background-color: var(--color-background);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.dialog {
+  position: absolute;
+  top: 0;
+
+  flex-direction: row;
+  opacity: 0.8;
+  background-color: #ffffff;
+  border-radius: var(--radius);
+
+  width: var(--screen-width);
+  height: var(--screen-height);
+
+  gap: 20px;
+  font-size: 2rem;
+}
+
+.dialog input {
+  width: 330px;
+  height: 80px;
+  padding: 1rem;
+  font-size: 3rem;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #19191c;
+  border:none;
+  border-bottom: 4px solid #2c2c2f;
+
+  outline: none;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+} .dialog input:hover, .dialog input:focus {
+  border-bottom: 4px solid #19191c;
+}::placeholder {
+  color: #25252ab6;
+  opacity: 1; /* Firefox */
+}
+
+.dialog button {
+  font-size: 3rem;
+  cursor: pointer;
+  background-color: #fff;
+  color: #6f6f6f;
+  border:none;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+} 
+
+.blur {
+  filter: blur(5px);
+  transition: all 1s ease-in-out;
+}

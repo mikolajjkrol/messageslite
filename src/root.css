@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+:root {
+  --color-primary: #f5f5f5;
+  --color-secondary: #828fa7;
+  --color-thirdary: #596780;
+  --color-text: #dadada;
+  --color-background: #1d1e20;
+  --color-fnt: #000000;
+
+  --screen-width: 720px;
+  --screen-height: 1120px;
+  --radius: 40px;
+  --sec-radius: 20px;
+
+  --header-fnt-size: 3.5rem;
+  --header-fnt-weight: bold;
+
+  --content-fnt-size: 1.3rem;
+  --content-fnt-weight: 300;
+
+  --button-fnt-size: 2rem;
+  --button-fnt-weight: 300;
+}
+
+  /* --color-primary: #121213;
+  --color-secondary: #828fa7;
+  --color-thirdary: #596780;
+  --color-text: #dadada;
+  --color-background: #1d1e20;
+  --color-fnt: #eeeeee; */
