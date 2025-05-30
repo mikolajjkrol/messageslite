@@ -1,5 +1,5 @@
 export async function fetchData(){
-    const response = await fetch('http://192.168.33.11:4000/get-messages');
+    const response = await fetch('https://mikolajjkrol.pythonanywhere.com/get-messages');
     const resData = await response.json();
     
     if(!response.ok){
@@ -10,7 +10,7 @@ export async function fetchData(){
 }
 
 export async function sendData(data) {
-    const response = await fetch('http://192.168.33.11:4000/post-messages', {
+    const response = await fetch('https://mikolajjkrol.pythonanywhere.com/post-messages', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
