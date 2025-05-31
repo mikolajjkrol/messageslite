@@ -39,23 +39,23 @@ function App() {
 
   function updateMessages(){
     if(messageValue != ''){ 
-    setMessages((prev)=>{
-      return [...prev, {content: messageValue, time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) , owner: username}]
-    })
+      setMessages((prev)=>{
+        return [...prev, {content: messageValue, time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) , owner: username}]
+      })
 
-    sendData({content: messageValue, time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) , owner: username})
-    .then((res) => {
-      console.log(res)
-    })
-    .catch((err) => {
-      console.log(err)
-    })
+      sendData({content: messageValue, time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) , owner: username})
+      .then((res) => {
+        console.log(res)
+      })
+      .catch((err) => {
+        console.log(err)
+      })
 
-    setMessageValue('')
-    }
+      setMessageValue('')
+      }
     else {
-    setMessages((prev)=>{
-      return [...prev, {content: "💖", time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) , owner: username}]
+      setMessages((prev)=>{
+        return [...prev, {content: "💖", time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) , owner: username}]
     })
 
     sendData({content: "💖", time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) , owner: username})
